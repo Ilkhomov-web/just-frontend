@@ -3,6 +3,7 @@
   justify-content: space-around;
   padding: 10px;
   box-shadow: 0 1px 3px -2px black;
+  align-items: center;
 }
 .nav-logo{
   display: flex;
@@ -46,8 +47,8 @@
   gap: 45px;
 }
 .nav-login-card button{
-  width: 157px;
-  height: 58px;
+  width: 137px;
+  height: 38px;
   outline: none;
   border: 1px solid #7a7a7a;
   border-radius: 75px;
@@ -71,4 +72,100 @@
   font-size: 14px;
   background-color: red;
   color: white;
+}
+.nav-dropdown{
+  display: none;
+}
+
+@media(max-width: 1280px){
+  .navbar{
+    padding: 10px 50px;
+  }
+  .nav-logo img{
+    width: 40px;
+  }
+  .nav-logo p{
+    font-size: 25px;
+  }
+  .nav-menu {
+    gap: 30px;
+    font-size: 16px;
+  }
+  .nav-login-card{
+    gap: 30px;
+  }
+  .nav-login-card button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .nav-card-count{
+    margin-left: -40px;
+    font-size: 12px;
+  }
+}
+@media(max-width: 1024px){
+  .navbar{
+    padding: 10px 20px;
+  }
+  .nav-menu {
+    gap: 20px;
+    font-size: 14px;
+  }
+  .nav-login-card{
+    gap: 30px;
+  }
+  .nav-login-card button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .nav-card-count{
+    width: 18px;
+    height: 18px;
+  }
+}
+@media(max-width: 800px){
+  .navbar{
+    padding: 10px 0px;
+    align-items: center;
+  }
+  .nav-dropdown{
+    display: block;
+    width: 40px;
+    height: 40px;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+  .nav-menu {
+    display: none;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    top: 55px;
+  }
+  .nav-menu-visible{
+    display: flex;
+  }
+  .nav-dropdown.open{
+    transform: rotate(90deg);
+  }
+}
+@media(max-width: 500px){
+  .navbar{
+    padding: 8px 0px;
+    gap: 0;
+  }
+  .nav-logo{
+    transform: scale(0.8);
+  }
+  .nav-menu{
+    height: 70px;
+    top: 50px;
+  }
+  .nav-login-card{
+    transform: scale(0.8);
+  }
 }
