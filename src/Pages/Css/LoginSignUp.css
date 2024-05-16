@@ -60,3 +60,50 @@
   font-size: 17px;
   font-weight: 500;
 }
+
+@media(max-width: 1280px){
+  .loginSignUp{
+    padding-top: 50px;
+  }
+  .loginSingUp-container{
+    width: auto;
+    max-width: 500px;
+    height: 500px;
+  }
+  .loginSingUp-container h1{
+    margin: 10px 0px;
+  }
+  .loginSignUp-fields{
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .loginSignUp-fields input{
+    height: 55px;
+    width: 100%;
+  }
+  .loginSignUp-login{
+    font-size: 15px;
+  }
+  .loginSignUp-agree{
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+@media(max-width: 800px){
+  .loginSingUp-container{
+    padding: 20px 30px;
+  }
+  .loginSingUp-container h1{
+    font-size: 24px;
+  }
+  .loginSignUp-fields{
+    margin-top: 20px;
+  }
+  .loginSignUp-fields input{
+    height: 45px;
+  }
+  .loginSingUp-container button{
+    height: 45px;
+    font-size: 16px;
+  }
+}
