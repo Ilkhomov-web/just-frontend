@@ -98,3 +98,60 @@
   cursor: pointer;
   border-radius: 50px;
 }
+
+@media(max-width: 1280px){
+  .cardItems{
+    margin: 60px 50px;
+  }
+  .cardItems-format-main{
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    padding: 15px 0px;
+    font-size: 15px;
+  }
+  .cardicon-product-icon{
+    height: 50px;
+  }
+  .cardItems-remove-icon{
+    margin: auto;
+  }
+  .cardItems-quantity{
+    width: 40px;
+    height: 30px;
+  }
+  .cardItems-down{
+    margin: 80px 0px;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .cardItems-total{
+    margin: 0;
+  }
+  .cardItems-total button{
+    max-width: 200px;
+    height: 45px;
+    font-size: 13px;
+  }
+  .cardItems-promoBox{
+    width: auto;
+    max-width: 500px;
+  }
+  .cardItems-promoBox input{
+    width: 100%;
+  }
+  .cardItems-promoBox button{
+    width: 120px;
+    margin-left: -120px;
+  }
+}
+
+@media(max-width: 500px){
+  .cardItems-format-main{
+    display: none;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap: 10px;
+  }
+  .cardItems-format{
+    display: grid;
+  }
+}
