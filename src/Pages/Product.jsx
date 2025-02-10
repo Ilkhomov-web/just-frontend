@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
 import RelatedProducts from '../Components/RelatedProducts/RelatedProducts';
+import ProductSkleton from '../Components/ProductSkleton/ProductSkleton';
 
 const Product = () => {
 
@@ -15,10 +16,11 @@ const Product = () => {
 
   return (
     <div>
-      <BreadCrum product={product} />
-      <ProductDisplay product={product} />
-      <DescriptionBox />
-      <RelatedProducts />
+      {product ? ( <>
+        <BreadCrum product={product} />
+        <ProductDisplay product={product} />
+        <DescriptionBox product={product} />
+        <RelatedProducts /> </>) : (<ProductSkleton />)}
     </div>
   )
 }

@@ -1,3 +1,9 @@
+.zindexNavbar{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1001;
+}
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -46,19 +52,43 @@
   align-items: center;
   gap: 45px;
 }
-.nav-login-card button{
+.nav-login-card .logout{
   width: 137px;
   height: 38px;
   outline: none;
-  border: 1px solid #7a7a7a;
+  border: 1px solid #ff4141;
   border-radius: 75px;
-  color: #515151;
-  font-size: 20px;
+  color: #ff4141;
+  font-size: 18px;
   background-color: white;
   cursor: pointer;
 }
-.nav-login-card button:active{
-  background-color: #f3f3f3;
+.nav-login-card .logout:hover{
+  background-color: #ff4141;
+  color: white;
+}
+.nav-login-card .logout:active{
+  background-color: #ffffff;
+  color: #ff4141;
+}
+.nav-login-card .login{
+  width: 137px;
+  height: 38px;
+  outline: none;
+  border: 1px solid #4ac512;
+  border-radius: 75px;
+  color: #4ac512;
+  font-size: 18px;
+  background-color: white;
+  cursor: pointer;
+}
+.nav-login-card .login:hover{
+  background-color: #4ac512;
+  color: white;
+}
+.nav-login-card .login:active{
+  background-color: #ffffff;
+  color: #4ac512;
 }
 .nav-card-count{
   width: 22px;
@@ -72,6 +102,7 @@
   font-size: 14px;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 .nav-dropdown{
   display: none;

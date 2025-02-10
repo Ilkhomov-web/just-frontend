@@ -42,7 +42,12 @@
   background-color: #ff4141;
   color: white;
   font-size: 20px;
+  cursor: pointer;
   font-weight: 500;
+}
+.hero-lates-btn:hover{
+  background-color: #fd1111;
+  border: 2px solid #ff4141;
 }
 .hero-right{
   flex: 1;

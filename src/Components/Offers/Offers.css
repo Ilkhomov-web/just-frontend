@@ -29,7 +29,7 @@
 }
 .offers-left button{
   width: 282px;
-  height: 70px;
+  padding: 10px 0px;
   border-radius: 35px;
   background-color: #ff4141;
   border: none;
@@ -38,6 +38,11 @@
   font-weight: 500;
   margin-top: 30px;
   cursor: pointer;
+  border: 2px solid #ff4141;
+}
+.offers-left button:hover{
+  background-color: #fd1111;
+  border: 2px solid #ff4141;
 }
 
 .offers-right{

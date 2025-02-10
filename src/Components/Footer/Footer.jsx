@@ -2,8 +2,9 @@ import React from 'react'
 import './Footer.css'
 import footer_logo from '../../assets/logo_big.png';
 import instagram_icon from '../../assets/instagram_icon.png';
-import pintester_icon from '../../assets/pintester_icon.png'
-import whatsap_icon from '../../assets/whatsapp_icon.png'
+import telegram_icon from '../../assets/telegramIcon.png'
+import phone_icon from '../../assets/phoneIcon.png';
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -13,21 +14,37 @@ const Footer = () => {
         <p>Just Shop</p>
       </div>
       <ul className="footer-links">
-        <li>Company</li>
-        <li>Product</li>
-        <li>Offices</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link style={{color: 'black'}} to='/about' >Company</Link>
+        </li>
+        <li>
+          <Link style={{color: 'black'}} to='/about' >Product</Link>
+        </li>
+        <li>
+          <Link style={{color: 'black'}} to='/about' >Offices</Link>
+        </li>
+        <li>
+          <Link style={{color: 'black'}} to='/about' >About</Link>
+        </li>
+        <li>
+          <Link style={{color: 'black'}} to='/about' >Contact</Link>
+        </li>
       </ul>
       <div className="footer-social-icon">
         <div className="footer-icon-container">
-          <img src={instagram_icon} alt="" />
+          <a href="https://www.instagram.com/justshop_jizzax/" target='_blank'>
+            <img src={instagram_icon} alt="" />
+          </a>
         </div>
         <div className="footer-icon-container">
-          <img src={pintester_icon} alt="" />
+          <a href="https://t.me/Just_shopstore" target='_blank'>
+            <img src={telegram_icon} alt="" />
+          </a>
         </div>
         <div className="footer-icon-container">
-          <img src={whatsap_icon} alt="" />
+          <a href="tel:+998903112211">
+            <img src={phone_icon} alt="" />
+          </a>
         </div>
       </div>
       <div className="footer-copyright">

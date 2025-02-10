@@ -72,14 +72,19 @@
   margin: 20px 0px;
   gap: 20px;
 }
-.productDisplay-right-sizes div{
+.productDisplay-right-sizes .selectSize{
   padding: 18px 24px;
   background: #fbfbfb;
-  border: 1px solid #ebebeb;
+  border: 1px solid #ff4141;
   border-radius: 3px;
   cursor: pointer;
+  color: #ff4141;
 }
-.productDisplay-right-sizes div:hover{
+.productDisplay-right-sizes .selectSize:hover{
+  background-color: #ff4141;
+  color: white;
+}
+.productDisplay-right-sizes .selected{
   background-color: #ff4141;
   color: white;
 }

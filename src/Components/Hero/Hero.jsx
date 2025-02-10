@@ -3,22 +3,23 @@ import './Hero.css';
 import hand_icon from '../../assets/hand_icon.png'
 import arrow_icon from '../../assets/arrow.png'
 import hero_image from '../../assets/hero_image.png'
+import {Link} from '@mui/material'
 
 const Hero = () => {
   return (
     <div className='hero'>
       <div className="hero-left">
-        <h2>New Arrivals only</h2>
+        <h2>Faqat yangi kelganlar</h2>
         <div>
           <div className="hero-hand-icon">
-            <p>new</p>
+            <p>Yangi</p>
             <img src={hand_icon} alt="" />
           </div>
-          <p>collactions</p>
-          <p>for everyone</p>
+          <p>To'plamlar </p>
+          <p>Hamma uchun</p>
         </div>
         <div className="hero-lates-btn">
-          <div>Latest Collaction</div>
+          <div onClick={()=>{window.location.href = '/newcollactions'}}>Eng So'ngi To'plam</div>
           <img src={arrow_icon} alt="" />
         </div>
       </div>

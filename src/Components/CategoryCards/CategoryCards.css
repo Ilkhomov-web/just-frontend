@@ -1,0 +1,145 @@
+
+.Categoryh1{
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.categoryCards{
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* background: rgb(46,176,87); */
+  /*background: linear-gradient(90deg, rgba(222, 231, 225, 0.715) 5%, rgba(94,237,32,0.45702030812324934) 100%, rgba(255,255,255,0.8239670868347339) 100%); */
+  padding: 30px;
+  border-radius: 20px;
+}
+a{
+  text-decoration: none;
+}
+
+.categoryCard{
+  width: 320px;
+  height: 300px;
+  background-image: url(../../assets/backgroundGame.webp);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socks{
+  background-image: url(../../assets/Nike-Socks-Colourful.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.sneaker{
+  background-image: url(../../assets/sneakersBack2.jpg);
+}
+.pants{
+  background-image: url(../../assets/pantsBack.jpg);
+}
+.caps{
+  background-image: url(../../assets/capsBack.webp);
+}
+.slipper{
+  background-image: url(../../assets/slipperBack.avif);
+}
+.fudbolka{
+  background-image: url(../../assets/fudbolka.webp);
+}
+.treko{
+  background-image: url(../../assets/trekoBack.webp);
+}
+.sviter{
+  background-image: url(../../assets/sviterBack.jpg);
+}
+.nimcha{
+  background-image: url(../../assets/nimchaBack.jpg);
+}
+.makas{
+  background-image: url(../../assets/makasBack.jpg);
+}
+.bag{
+  background-image: url(../../assets/bagBack.jfif);
+}
+.boshqa{
+  background-image: url(../../assets/boshqaBack.jpg);
+  background-position: left;
+}
+.discount{
+  background-image: url(../../assets/discountBack.jpg);
+}
+.look{
+  background-image: url(../../assets/lookBack.webp);
+}
+.categoryCard:hover{
+  transform: scale(1.1);
+}
+
+/* 992154687 */
+/* .categoryCard img{
+  width: 100px;
+  border-radius: 20px;
+} */
+.categoryCard p{
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  font-size: 30px;
+}
+
+@media(max-width: 1280px){
+  .categoryCards{
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryCard{
+    width: 300px;
+    height: 280px;
+  }
+}
+@media(max-width: 1024px){
+  .categoryCards{
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryCard{
+    width: 280px;
+    height: 280px;
+  }
+}
+@media(max-width: 800px){
+  .categoryCards{
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryCard{
+    width: 250px;
+    height: 280px;
+  }
+}
+@media(max-width: 600px){
+  .categoryCards{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryCard{
+    width: 250px;
+    height: 280px;
+  }
+}

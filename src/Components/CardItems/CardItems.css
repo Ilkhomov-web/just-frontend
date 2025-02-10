@@ -48,6 +48,7 @@
 }
 .cardItems-total-item{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 15px 0px;
 }
@@ -88,7 +89,10 @@
   width: 330px;
   height: 50px;
 }
-
+.promoErr{
+  font-size: 13px;
+  position: absolute;
+}
 .cardItems-promoBox button{
   width: 154px;
   height: 58px;
@@ -97,6 +101,74 @@
   color: white;
   cursor: pointer;
   border-radius: 50px;
+}
+
+.modalPayments{
+  width: 60%;
+  height: 500px;
+  background-color: #ff5a5a;
+  position: fixed;
+  margin: 0 auto;
+  top: 100px;
+  left: 270px;
+  padding: 20px;
+  transition: 0.5s;
+  overflow: scroll;
+}
+.mapPayment h2{
+  color: white;
+}
+.noneModal{
+  display: none;
+}
+.modalHeader{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 10px 20px;
+}
+.modalHeader h1{
+  color: White;
+}
+.modalHeader button{
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #ff5a5a;
+  border: none;
+  border-radius: 20px;
+}
+.modalBody{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.inputPayment{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.inputPayment input{
+  padding: 5px 15px;
+  font-size: 16px;
+}
+.inputPayment button{
+  font-size: 18px;
+  padding: 8px 0px;
+  background-color: white;
+  border: none;
+  color: #ff5a5a;
+  border-radius: 10px;
+}
+.mapPayment{
+  overflow: hidden;
 }
 
 @media(max-width: 1280px){
@@ -145,6 +217,83 @@
   }
 }
 
+@media(max-width: 1070px){
+  .inputPayment{
+    width: 38%;
+  }
+}
+@media(max-width: 1024px){
+  .inputPayment{
+    width: 35%;
+  }
+  .modalHeader{
+   margin-top: 10px; 
+  }
+}
+
+@media(max-width: 850px){
+  .modalPayments{
+    width: 80%;
+    height: 580px;
+    left: 200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 80px;
+  }
+  .modalBody{
+    height: auto;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .inputPayment{
+    width: 80%;
+  }
+}
+
+@media(max-width: 680px){
+  .modalPayments{
+    width: 80%;
+    height: 580px;
+    left: 50px;
+    overflow-y: scroll;
+    top: 80px;
+  }
+  .modalHeader {
+    margin-top: 50px;
+  }
+  .modalBody{
+    flex-direction: column;
+  }
+  .inputPayment{
+    width: 80%;
+  }
+}
+@media(max-width: 600px){
+  .modalPayments{
+    width: 80%;
+    height: 480px;
+    padding: 20px 0px;
+    left: 60px;
+    top: 93px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .modalHeader{
+    margin-top: 150px;
+  }
+  .modalHeader h1{
+    font-size: 20px;
+  }
+  .inputPayment{
+    width: 80%;
+  }
+}
+
 @media(max-width: 500px){
   .cardItems-format-main{
     display: none;
@@ -153,5 +302,23 @@
   }
   .cardItems-format{
     display: grid;
+  }
+  .modalPayments{
+    width: 80%;
+    height: 480px;
+    padding: 20px 40px;
+    left: 60px;
+    top: 103px;
+    overflow: scroll;
+  }
+  .modalHeader{
+    margin-top: 180px;
+    padding: 10px;
+  }
+  .modalHeader h1{
+    font-size: 18px;
+  }
+  .inputPayment{
+    width: 80%;
   }
 }
