@@ -37,7 +37,7 @@ const ModalCardItems = ({
             type="text"
             placeholder="Telefon Raqamingiz"
           />
-          <input type="submit" />
+          <input type="submit" className="button"  />
         </form>
       </div>
       <div className="modalFooter"></div>

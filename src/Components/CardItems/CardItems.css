@@ -105,15 +105,17 @@
 
 .modalPayments{
   width: 60%;
-  height: 500px;
+  height: 700px;
   background-color: #ff5a5a;
   position: fixed;
   margin: 0 auto;
-  top: 100px;
-  left: 270px;
-  padding: 20px;
+  top: 150px;
+  left: 370px;
+  padding: 50px;
   transition: 0.5s;
-  overflow: scroll;
+  overflow: auto;
+  border-radius: 10px;
+  /* backdrop-filter: blur(20px); */
 }
 .mapPayment h2{
   color: white;
@@ -159,13 +161,14 @@
   padding: 5px 15px;
   font-size: 16px;
 }
-.inputPayment button{
+.inputPayment .button{
   font-size: 18px;
   padding: 8px 0px;
   background-color: white;
   border: none;
   color: #ff5a5a;
   border-radius: 10px;
+  cursor: pointer;
 }
 .mapPayment{
   overflow: hidden;

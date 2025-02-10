@@ -13,6 +13,10 @@
   border-radius: 48px;
   border: 1px solid #888;
 }
+.shopCategory-sort select{
+  border: none;
+  
+}
 .shopCategory-indexSort p span{
   font-weight: 600;
 }
