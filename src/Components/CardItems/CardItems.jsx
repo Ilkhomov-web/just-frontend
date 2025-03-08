@@ -79,22 +79,18 @@ const CardItems = () => {
   };
 
   const handlePromoSubmit = () => {
-    // Add your promo code validation logic here
-    const validPromoCodes = ["PROMO10", "DISCOUNT20"]; // Example valid promo codes
+    const validPromoCodes = ["PROMO10", "DISCOUNT20"];
     if (!validPromoCodes.includes(promoCode)) {
       const handleWindowClick = () => {
         setPromoError(false);
       };
       setPromoError(true);
-      setTimeout(handleWindowClick, 3000)
+      setTimeout(handleWindowClick, 3000);
     } else {
       setPromoError(false);
       // Apply discount logic here if needed
     }
   };
-  
-
-
 
   return (
     <div className="cardItems">
@@ -174,7 +170,9 @@ const CardItems = () => {
               placeholder="Promo"
             />
             {promoError && (
-              <p style={{color: 'red'}} className="promoErr">Bunday PromoCode mavjud emas !</p>
+              <p style={{ color: "red" }} className="promoErr">
+                Bunday PromoCode mavjud emas !
+              </p>
             )}
             <button onClick={handlePromoSubmit}>Submit</button>
           </div>
