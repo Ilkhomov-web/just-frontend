@@ -22,7 +22,6 @@
     "react-leaflet": "^4.2.1",
     "react-phone-number-input": "^3.4.3",
     "react-router-dom": "^6.23.0",
-    "react-swipeable-views": "^0.14.0",
     "styled-components": "^6.1.11",
     "sweetalert2": "^11.11.0"
   },
